@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Check table countries for data existing",
+      "query": "SELECT COUNT(*) AS total_cnt FROM TRN.hr.countries",
+      "expected": "25"
+    },
+    {
+      "name": "Check table departments for data existing",
+      "query": "SELECT COUNT(*) FROM TRN.hr.departments",
+      "expected": "10"
+    },
+    {
+      "name": "Check table dependents for data existing",
+      "query": "SELECT COUNT(*) FROM TRN.hr.dependents",
+      "expected": "30"
+    },
+    {
+      "name": "Check table employees for data existing",
+      "query": "SELECT COUNT(*) FROM TRN.hr.employees",
+      "expected": "10"
+    },
+    {
+      "name": "Check table jobs for data existing",
+      "query": "SELECT COUNT(*) FROM TRN.hr.jobs",
+      "expected": "19"
+    },
+    {
+      "name": "Check table locations for data existing",
+      "query": "SELECT COUNT(*) FROM TRN.hr.locations",
+      "expected": "10"
+    },
+    {
+      "name": "Check table regions for data existing",
+      "query": "SELECT COUNT(*) FROM TRN.hr.regions",
+      "expected": "5"
+    },
+  {
+      "name": "Check countries count in each region",
+      "query": "SELECT COUNT(*), r.region_name \nFROM hr.countries c\nINNER JOIN hr.regions r\n\tON c.region_id = r.region_id \nGROUP BY r.region_name;",
+      "expected": "(5, 'Americas')(6, 'Asia')(8, 'Europe')(6, 'Middle East and Africa')"
+    }
+  ]
+}
