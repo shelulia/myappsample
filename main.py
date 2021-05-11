@@ -1,3 +1,5 @@
+#! /usr/local/bin/python
+
 import sys
 from configurator import Configurator
 from connector import Connector
