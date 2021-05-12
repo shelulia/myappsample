@@ -10,6 +10,8 @@ pipeline {
             steps {
                 sh 'pyp3 install pyodbc'
             }
+            }
+            stage('Run') {
             steps {
                 sh 'python main.py'
             }
