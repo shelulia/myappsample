@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             agent {
                 docker {
-                    image 'python:2-alpine'
+                    sh 'apt-get install -y python3-pip'
                 }
             }
             steps {
