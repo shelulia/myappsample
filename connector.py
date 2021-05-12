@@ -1,8 +1,8 @@
-import pyodbc
+import pypyodbc
 
 class Connector:
     def __init__(self, database_url):
-        conn = pyodbc.connect(database_url)
+        conn = pypyodbc.connect(database_url)
         self.cursor = conn.cursor()
 
     def execute(self, query):
