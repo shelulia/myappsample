@@ -4,8 +4,11 @@ pipeline {
         stage('Build') {
             agent {
                 docker {
-                    sh 'pip3 install pyodbc'
+                    image 'python:2-alpine'
                 }
+            }
+            steps {
+                sh 'pyp3 install pyodbc'
             }
             steps {
                 sh 'python main.py'
