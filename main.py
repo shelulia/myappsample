@@ -8,7 +8,9 @@ from testProcessor import TestProcessor
 
 
 def run():
-    config = Configurator(sys.argv["dev"])
+
+#    config = Configurator(sys.argv[1])
+    config = Configurator("dev")
     database_url = config.get_database_url()
 
     connector = Connector(database_url)
