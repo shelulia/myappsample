@@ -5,22 +5,14 @@ pipeline {
             agent {
                 docker {
                     image 'python:3'
+                    image 'python:2-alpine'
                     args '-u root:root'
                 }
             }
             steps {
                 sh 'pip3 install --user pypyodbc'
+                sh 'python main.py'
             }
         }
-        stage('Run') {
-            agent {
-                docker {
-                    image 'python:2-alpine'
-                }
-            }
-                steps {
-                    sh 'python main.py'
-            }
         }
     }
-}
