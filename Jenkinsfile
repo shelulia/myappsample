@@ -10,7 +10,7 @@ pipeline {
             }
             steps {
                 sh 'pip3 install --user pypyodbc'
-                sh 'pip3 main.py'
+                sh 'python3 main.py'
             }
         }
         }
