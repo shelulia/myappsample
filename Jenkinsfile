@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Test'){
             steps{
-              sh 'python3 main.py DSN=MSSQL-PYTHON'
+              sh 'python3 main.py'
         }}
     }
 }
