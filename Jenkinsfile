@@ -1,15 +1,9 @@
-pipeline {
-    agent none
-    stages {
-        stage('Build') {
-            agent {
-                docker {
-                    image 'python:2-alpine'
-                }
-            }
-            steps {
-                sh 'python main.py'
-            }
-        }
+pipeline{
+    agent any
+    stages{
+        stage('Test'){
+            steps{
+              sh 'python3 main.py'
+        }}
     }
 }
