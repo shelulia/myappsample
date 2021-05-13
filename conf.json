@@ -1,6 +1,6 @@
 {
   "dev": {
-    "database": "DRIVER={msodbcsql17};SERVER=127.0.0.1,1433;DATABASE=TRN;UID=sa;PWD=reallyStrongPwd123",
+    "database": "DRIVER={/usr/local/Cellar/msodbcsql17/17.7.2.1/lib/libmsodbcsql.17.dylib};SERVER=127.0.0.1,1433;DATABASE=TRN;UID=sa;PWD=reallyStrongPwd123",
     "test_data_folder": "/Users/shaliyu1/PycharmProjects/custom_framework_ys_hw_module4/test_data/"
   },
 
