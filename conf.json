@@ -1,6 +1,6 @@
 {
   "dev": {
-    "database": "DRIVER={/usr/local/etc/odbcinst.ini};SERVER=127.0.0.1,1433;DATABASE=TRN;UID=sa;PWD=reallyStrongPwd123;Trusted_Connection=no",
+    "database": "DRIVER={unixODBC};SERVER=127.0.0.1,1433;DATABASE=TRN;UID=sa;PWD=reallyStrongPwd123;Trusted_Connection=no",
     "test_data_folder": "/Users/shaliyu1/PycharmProjects/custom_framework_ys_hw_module4/test_data/"
   },
 
