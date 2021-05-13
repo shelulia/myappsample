@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('Test'){
             steps{
-              sh 'python3 main.py'
+              sh 'isql -v -k "DRIVER={ODBC Driver 17 for SQL Server};SERVER=127.0.0.1,1433;DATABASE=TRN;UID=sa;PWD=reallyStrongPwd123" '
         }}
     }
 }
