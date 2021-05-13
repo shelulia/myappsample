@@ -1,6 +1,6 @@
 {
   "dev": {
-    "database": "DRIVER={ODBC Driver 17 for SQL Server};SERVER=127.0.0.1,1433;DATABASE=TRN;UID=sa;PWD=reallyStrongPwd123",
+    "database": "DRIVER={FreeTDS};SERVER=127.0.0.1,1433;DATABASE=TRN;UID=sa;PWD=reallyStrongPwd123",
     "test_data_folder": "/Users/shaliyu1/PycharmProjects/custom_framework_ys_hw_module4/test_data/"
   },
 
