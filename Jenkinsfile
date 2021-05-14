@@ -8,6 +8,6 @@ pipeline{
            }
         stage('Push to Git'){
             steps{
-              sh 'git push https://shelulia:GoodL1fe1@github.com/shelulia/myappsample.git dev'}}
+              sh 'git push https://shelulia:GoodL1fe1@github.com/shelulia/myappsample/dev.git master'}}
     }
 }
