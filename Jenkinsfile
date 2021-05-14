@@ -13,10 +13,8 @@ pipeline{
            }
         stage('Create PreProd branch'){
             steps{
-              sh 'git config --global user.email "shelulia@gmail.com"'
-              sh 'git config --global user.name "shelulia"'
               sh 'git checkout dev'
-              sh 'git checkout -b PPR_2'
-              sh 'git push -u https://$GitHubUser_USR:$GitHubUser_PSW@github.com/shelulia/myappsample.git PPR_2'}}
+              sh 'git checkout -b PPR_3'
+              sh 'git push -u https://$GitHubUser_USR:$GitHubUser_PSW@github.com/shelulia/myappsample.git PPR_3'}}
     }
 }
