@@ -17,7 +17,7 @@ pipeline{
               sh 'git init'
               sh 'git config --global user.email "shelulia@gmail.com"'
               sh 'git config --global user.name "shelulia"'
-              sh 'git checkout -b PPR'
+              sh 'git branch -d PPR'
               sh 'git clone  https://shelulia:GoodL1fe1@github.com/shelulia/myappsample/PPR.git --branch dev' }}
     }
 }
