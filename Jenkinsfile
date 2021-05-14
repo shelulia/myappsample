@@ -8,7 +8,6 @@ pipeline{
            }
         stage('Push to Git'){
             steps{
-              sh 'git checkout -b dev'
               sh 'git config --global user.email "shelulia@gmail.com"'
               sh 'git config --global user.name "shelulia"'
               sh 'git add .'
