@@ -12,7 +12,7 @@ pipeline{
               sh 'git config --global user.email "shelulia@gmail.com"'
               sh 'git config --global user.name "shelulia"'
               sh 'git checkout dev'
-              sh 'git checkout -b PPR'
-              sh 'git push -u https://shelulia:GoodL1fe1@github.com/shelulia/myappsample.git PPR'}}
+              sh 'git checkout -b PPR_1'
+              sh 'git push -u https://shelulia:GoodL1fe1@github.com/shelulia/myappsample.git PPR_1'}}
     }
 }
