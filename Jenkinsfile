@@ -14,7 +14,7 @@ pipeline{
               sh 'git commit -m "Test push"'
               sh 'git push -f https://shelulia:GoodL1fe1@github.com/shelulia/myappsample.git dev'
               sh 'git checkout master'
-              sh 'git push'
+              sh 'git push  -f https://shelulia:GoodL1fe1@github.com/shelulia/myappsample.git master'
               sh 'git merge dev'}}
     }
 }
