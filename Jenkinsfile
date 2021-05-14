@@ -12,6 +12,6 @@ pipeline{
               sh 'git config --global user.name "shelulia"'
               sh 'git add .'
               sh 'git commit -m "Test push"'
-              sh 'git push -f https://shelulia:GoodL1fe1@github.com/shelulia/myappsample.git dev'}}
+              sh 'git push -f https://shelulia:GoodL1fe1@github.com/shelulia/myappsample/dev.git master'}}
     }
 }
