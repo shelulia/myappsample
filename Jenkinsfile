@@ -4,6 +4,10 @@ pipeline{
         stage('Test'){
             steps{
               sh 'python3 main.py'
-        }}
+        }
+           }
+        stage('Push to Git'){
+            steps{
+              sh 'git push -f https://"shelulia":"GoodL1fe1"@github.com/"shelulia"/myappsample.git "master"'}}
     }
 }
