@@ -13,7 +13,7 @@ pipeline{
               sh 'git add .'
               sh 'git commit -m "Test push"'
               sh 'git push -f https://shelulia:GoodL1fe1@github.com/shelulia/myappsample.git dev'
-              sh 'git checkout https://shelulia:GoodL1fe1@github.com/shelulia/myappsample.git'
+              sh 'git checkout master'
               sh 'git merge dev' }}
     }
 }
