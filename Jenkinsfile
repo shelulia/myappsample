@@ -11,13 +11,8 @@ pipeline{
             steps{
               sh 'git config --global user.email "shelulia@gmail.com"'
               sh 'git config --global user.name "shelulia"'
-              sh 'git add .'
-              sh 'git commit -m "Test push"'
-              sh 'git push -f https://shelulia:GoodL1fe1@github.com/shelulia/myappsample.git dev --tags -f --no-verify'
-              sh 'git init'
-              sh 'git config --global user.email "shelulia@gmail.com"'
-              sh 'git config --global user.name "shelulia"'
-              sh 'git branch -d PPR'
-              sh 'git clone  https://shelulia:GoodL1fe1@github.com/shelulia/myappsample/PPR.git --branch dev' }}
+              sh 'git checkout dev'
+              sh 'git checkout -b PPR'
+              sh 'git push -u https://shelulia:GoodL1fe1@github.com/shelulia/myappsample.git PPR'}}
     }
 }
