@@ -6,7 +6,7 @@ from resulting import Result
 from testProcessor import TestProcessor
 
 def run():
-#tesing of commit to Git
+#tesing of commit to Git2
 #    config = Configurator(sys.argv[1])
     config = Configurator("dev")
     database_url = config.get_database_url()
