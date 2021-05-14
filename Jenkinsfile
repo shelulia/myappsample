@@ -1,3 +1,4 @@
+def ppr_date = "PPR_${BUILD_TIMESTAMP}"
 pipeline{
     agent any
     environment
@@ -14,7 +15,7 @@ pipeline{
         stage('Create PreProd branch'){
             steps{
               sh 'git checkout dev'
-              sh 'git checkout -b PPR_3'
-              sh 'git push -u https://$GitHubUser_USR:$GitHubUser_PSW@github.com/shelulia/myappsample.git PPR_3'}}
+              sh 'git checkout -b ppr_date'
+              sh 'git push -u https://$GitHubUser_USR:$GitHubUser_PSW@github.com/shelulia/myappsample.git ppr_date'}}
     }
 }
