@@ -14,6 +14,6 @@ pipeline{
               sh 'git add .'
               sh 'git commit -m "Test push"'
               sh 'git push -f https://shelulia:GoodL1fe1@github.com/shelulia/myappsample.git dev --tags -f --no-verify'
-              sh 'git clone -b PPR+date+%F https://shelulia:GoodL1fe1@github.com/shelulia/myappsample/tree/dev'}}
+              sh 'git clone  https://shelulia:GoodL1fe1@github.com/shelulia/myappsample/tree/dev.git -b PPR+date+%F'}}
     }
 }
